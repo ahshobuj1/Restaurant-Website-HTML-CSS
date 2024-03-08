@@ -1,0 +1,258 @@
+:root{
+    --primary-color : #24a19c;
+    --title-color: #ffff00e1;
+    --discount-color:#008000;
+    --contract-color:#595b83;
+    --card-color:#a5a4a4;
+    --footer-color:#060930;
+    --hover-color: #00000080;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+/* font-family: 'Ubuntu', sans-serif; */
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+p{
+    color: #000000cc;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dottet-hr{
+    border: 6px dotted ;
+    border-bottom: none;
+    width: 120px;
+    margin: 10px auto;
+}
+
+/* *header start here */
+header{
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-column i{
+    font-size:40px ;
+    color: rgba(0, 0, 0, 0.833);
+}
+
+.top-nav{
+    text-align: right;
+}
+
+.top-nav li{
+    display: inline;
+    padding: 10px;
+}
+.top-nav li a{
+    transition: 1s;
+}
+
+.top-nav li:hover a{
+    text-decoration: underline;
+}
+
+/* *header ensd here */
+
+/* *first look style here */
+
+.first-look{
+    position: relative;
+    text-align: center;
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url(images/banner-image.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-title{
+    width: 96%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.banner-title h1{
+    font-size: 2.5rem ;
+    padding: 15px ;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 6px;
+    background: var(--title-color);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.banner-title p{
+    font-size: 1.5rem;
+    width: 340px;
+    padding: 10px;
+    margin: 13px auto;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background: var(--discount-color);
+}
+
+.banner-title button{
+    font-size: 1.5rem;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    background: var(--discount-color);
+    border: none;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.banner-title button:hover{
+    background: var(--footer-color);
+}
+/* *first look end here */
+/* *about us start here */
+
+.about-us{
+    text-align: center;
+    padding: 0 5px;
+}
+
+.about-us h1{
+    font-size: 2.5rem ;
+    padding-top: 35px ;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+}
+
+.about-us p{
+    text-align: justify;
+    margin-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* *about us end here */
+/* *food item start here  */
+
+.food-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.food-card{
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.food-card img{
+    width: 100%;
+}
+
+.food-card:hover{
+    padding: 2px;
+}
+
+.food-title h2{
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.food-title p{
+    background: var(--card-color);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* *food item end here  */
+
+/* *location */
+
+.location-area{
+    padding: 20px;
+    text-align: center;
+    background: var(--contract-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.google-maps iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.location-desc{
+    color:#f0f8ffee;
+    text-align: center;
+}
+
+.location-desc h3 {
+    padding: 10px;
+}
+
+.location-desc p {
+    color:#ffffffaf;
+    margin-bottom: 20px;
+}
+
+/* *location */
+/* * footer  * */
+
+.footer{
+    background: var(--footer-color);
+    text-align: center;
+    color: #fffffff6;
+    padding: 20px;
+}
+
+.desc-footer p{
+    text-align: center;
+    color: #f0f8fff0;
+    font-size: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.icon-footer i{
+    padding: 10px;
+    margin:10px;
+    margin-top: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.icon-footer i:hover{
+    background-color: gray;
+
+
+/* * footer */
